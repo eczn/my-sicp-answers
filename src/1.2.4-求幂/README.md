@@ -32,7 +32,7 @@
 
 # 习题 1.18
 
-吧 1.17 优化成迭代的写法，减少空间复杂度。
+把 1.17 优化成迭代的写法，减少空间复杂度。[recursive-multiply-iter.rkt](./recursive-multiply-iter.rkt)
 
 
 # 习题 1.19 
