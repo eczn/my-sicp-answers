@@ -18,7 +18,7 @@
 (define (better-* a b)
     (better-*-iter a b 0))
 
-;; 写的比较复杂... 而且还错了
+;; 写的乱七八糟... 而且最终的时间复杂度还不是严格的 logn 算写错了
 (define (better-*-iter-not-good a b n accumulation sum)
     (if (= n 0)
         (better-*-iter-not-good a b (+ n 1) (+ a accumulation) sum)
