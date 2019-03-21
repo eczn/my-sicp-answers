@@ -23,8 +23,8 @@ module.exports = function() {
             });
 
             return [
-                `[${ section }](${ encodeURI(link) })`, 
-                questionsWithlink.join(', ')
+                `### [${ section }](${ encodeURI(link) }) \n`, 
+                `> ${ questionsWithlink.join(', ') }`
             ].join('\n');
         }).join('\n\n');
     
