@@ -10,7 +10,17 @@ SICP 全称计算机程序的构造和解释，额，名字很正，其实书上
 
 # 使用说明
 
-参考目录使用即可。此外，MIT/Scheme 目前不再支持 windows 了，在这里我用 racket 的 sicp 包来写书上的习题。关于 racket/sicp 可以参考：https://docs.racket-lang.org/sicp-manual/index.html
+> We no longer support OS/2, DOS, or Windows.
+
+此外，MIT/Scheme 目前不再支持 windows 了，在这里我用 racket 的 sicp 包来写书上的习题。关于 racket/sicp 可以参考：https://docs.racket-lang.org/sicp-manual/index.html
+
+安装好 Racket 以及 sicp 包之后，还得设置一下系统 path 以确保命令行工具的使用。
+
+全部都搞好以后可以用命令行工具运行本仓库的 `1 + 1` 例子:
+
+``` bash 
+$ racket ./1+1.rkt
+```
 
 
 # 目录
@@ -23,12 +33,6 @@ SICP 全称计算机程序的构造和解释，额，名字很正，其实书上
 [1.2.4 求幂](./src/%E7%AC%AC%201%20%E7%AB%A0%20%E6%9E%84%E9%80%A0%E8%BF%87%E7%A8%8B%E6%8A%BD%E8%B1%A1/1.2.4%20%E6%B1%82%E5%B9%82)
 习题 1.16, 习题 1.17, 习题 1.18, 习题 1.19
 
-
-# 代码为什么是 .rkt 后缀 ?
-
-> We no longer support OS/2, DOS, or Windows.
-
-书上那个 MIT/Scheme 比较鄙视 Windows 用户。。。因此我这边用 Racket 里的 SICP 包来替代了，安装和食用方式参见：https://docs.racket-lang.org/sicp-manual/index.html
 
 
 # License
