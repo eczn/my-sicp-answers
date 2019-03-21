@@ -9,7 +9,7 @@ module.exports = function() {
     const chatersInfo = readChaters();
 
     const contents = chatersInfo.map(({ chapter, questionInfo }) => {
-        const res = `# ${ chapter }`;
+        const res = `## ${ chapter }`;
     
         const q = questionInfo.map(({ section, questions }) => {
             const link = `./src/${chapter}/${section}`;
@@ -17,7 +17,7 @@ module.exports = function() {
                 `[${ section }](${ encodeURI(link) })`, 
                 questions.join(', ')
             ].join('\n');
-        }).join('\n\n------\n\n');
+        }).join('\n\n');
     
         return [
             res, q
