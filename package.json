@@ -1,0 +1,26 @@
+{
+  "name": "my-sicp-answers",
+  "version": "1.0.0",
+  "description": "my sicp answers",
+  "main": "index.js",
+  "scripts": {
+    "make": "node ./tools/make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eczn/my-sicp-answers.git"
+  },
+  "keywords": [
+    "sicp"
+  ],
+  "author": "eczn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eczn/my-sicp-answers/issues"
+  },
+  "homepage": "https://github.com/eczn/my-sicp-answers#readme",
+  "devDependencies": {
+    "fs-extra": "^7.0.1",
+    "rimraf": "^2.6.3"
+  }
+}
