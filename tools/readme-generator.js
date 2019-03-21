@@ -15,9 +15,16 @@ module.exports = function() {
     
         const q = questionInfo.map(({ section, questions }) => {
             const link = `./src/${chapter}/${section}`;
+            const questionsWithlink = questions.map(q => {
+                const hash = q.replace(/ /, '-').replace(/\./g, '');
+                const qLink = `${ link }#${ hash }`;
+
+                return `[${q}](${ encodeURI(qLink) })`
+            });
+
             return [
                 `[${ section }](${ encodeURI(link) })`, 
-                questions.join(', ')
+                questionsWithlink.join(', ')
             ].join('\n');
         }).join('\n\n');
     
