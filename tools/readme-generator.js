@@ -7,9 +7,11 @@ const tpl = fs.readFileSync(
 
 module.exports = function() {
     const chatersInfo = readChaters();
-
     const contents = chatersInfo.map(({ chapter, questionInfo }) => {
-        const res = `## ${ chapter }`;
+        const n = questionInfo.reduce((acc, cur) => {
+            return acc + cur.questions.length
+        }, 0);
+        const res = `## ${ chapter } (共 ${n} 题)`;
     
         const q = questionInfo.map(({ section, questions }) => {
             const link = `./src/${chapter}/${section}`;
