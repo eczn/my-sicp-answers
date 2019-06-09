@@ -27,7 +27,11 @@ $ racket ./1+1.rkt
 
 {{contents}}
 
+# make README.md 
 
+``` bash
+$ npm run make 
+```
 
 # License
 
