@@ -2,7 +2,10 @@
 # <p align="center">MY SICP ANSWERS</p>
 
 <p align="center">
-SICP 全称计算机程序的构造和解释，额，名字很正，其实书上主要就是讲程序如何构造和程序如何运行的，全书分 5 章，各章有不同的主题。
+SICP 全称计算机程序的构造和解释，书上主要介绍了程序如何构造，
+</p>
+<p align="center">
+以及程序是如何运行的，全书分 5 章，各章有不同的主题。
 </p>
 
 <p align="center">
