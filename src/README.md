@@ -1,3 +1,3 @@
-<p width="600" align="center">
-    <img src="../images/1200x500.jpg">
+<p align="center">
+    <img width="600" src="../images/1200x500.jpg">
 </p>
