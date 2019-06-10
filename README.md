@@ -5,7 +5,9 @@
 
 SICP 全称计算机程序的构造和解释，额，名字很正，其实书上主要就是讲程序如何构造和程序如何运行的，全书分 5 章，各章有不同的主题。
 
-<center>![SICP-COVER](images/sicp-cover.jpg)</center>
+<p align="center">
+    <img src="images/sicp-cover.jpg">
+</p>
 
 我的 SICP 习题册, 有些难的可能还没写出来 ^ ^ 还要再推敲推敲, 本册子也可能随时弃坑。。。
 
