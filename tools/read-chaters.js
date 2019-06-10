@@ -14,7 +14,10 @@ function readSectionDir(sectionDir) {
 }
 
 module.exports = function() {
-    const chapters = fs.readdirSync(src);
+    const chapters = fs.readdirSync(src).filter(chapter => {
+        const chapterDir = path.join(src, chapter);
+        return fs.statSync(chapterDir).isDirectory();
+    });
 
     return chapters.map(chapter => {
         const chapterDir = path.join(src, chapter);
