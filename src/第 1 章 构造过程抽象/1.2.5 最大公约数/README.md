@@ -31,7 +31,7 @@
 
 好吧，这是一系列递进的题，先做着先，看看怎么说。
 
-详见 [search-for-primes-2.rkt]('./search-for-primes-2.rkt') 结果输出：
+详见 [search-for-primes-2.rkt](./search-for-primes-2.rkt) 结果输出：
 
 ``` bash
 > racket ./search-for-primes-2.rkt
