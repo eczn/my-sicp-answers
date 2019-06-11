@@ -11,6 +11,7 @@ module.exports = function() {
         const n = questionInfo.reduce((acc, cur) => {
             return acc + cur.questions.length
         }, 0);
+        
         const res = `## ${ chapter } (共 ${n} 题)`;
     
         const q = questionInfo.map(({ section, questions }) => {
