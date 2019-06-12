@@ -53,3 +53,16 @@
 (define three (add one two))
 ((three inc) 0)
 ```
+
+# 对 Church Number 的定义的思考
+
+Church Number 这种计数的手段是利用函数的调用次数来定义非负整数：
+
+1. 将 0 定义为 f => x
+2. 将 1 定义为 f => f(x)
+3. 将 2 定义为 f => f(f(x)) 
+4. .... 以此类推
+
+在 [church.rkt](./church.rkt) 种中 `add-1` 是该计数方式从 k-1 到 k 的递推公式。
+而 `add` 完成了这种计数方式的加法，比如 `(add one one)` 应该为 `two` (one 和 two 是 Church 数的 1 和 2)
+
