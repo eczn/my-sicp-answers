@@ -82,20 +82,20 @@ PB = (b2 - b1) / (b1 + b2)
 可以思考一个简单的情况：
 
 ``` scheme
-(define my-r3 (make-interval 3 4))
-(define my-r4 (make-interval 3 4))
+(define A (make-interval 3 4))
 
-(print-interval my-r3) ;; r3 
+
+(print-interval A) ;; A 
 ;; [3,4]
 
 (newline)
 
 (print-interval
-    (sub-interval (add-interval my-r3 my-r4) my-r4)) ;; r3 + r4 - r4
+    (sub-interval (add-interval A A) A)) ;; A
 ;; [2,5] 
 ```
 
-其中 `my-r4` 出现了两次，先加到 my-r3 然后再减去，因为 add 和 sub 的计算实现，从而得到 `[2,5]` 的结果。
+因为区间计算的特殊性导致 A + A - A 得到了 `[2,5]` 的结果。
 
 
 
@@ -105,4 +105,4 @@ PB = (b2 - b1) / (b1 + b2)
 
 先鸽着，根据 2.15 的说辞，应该对用户输入的表达式进行化简，消去非确定性的变量。
 
-
+（暂时没搞定。。好难啊）

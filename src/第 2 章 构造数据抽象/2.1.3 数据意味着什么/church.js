@@ -6,8 +6,8 @@ const zero = f => x => x;
 
 const add1 = n => f => x => f(n(f)(x))
 
-const one = f => x => f(x)
-const two = f => x => f(f(x))
+const one = f => x => f(x);
+const two = f => x => f(f(x));
 
 console.log(one(inc)(0));
 console.log(two(inc)(0));
