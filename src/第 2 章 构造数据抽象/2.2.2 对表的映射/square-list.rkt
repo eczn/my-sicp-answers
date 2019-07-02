@@ -47,15 +47,6 @@
                         (square (car things))))))
     (iter items nil))
 
-(define (square-list-iter-3 items)
-    (define (iter things answer)
-        (if (null? things)
-            answer
-            (iter (cdr things)
-                  (cons (square (car things))
-                        answer))))
-    (iter items nil))
-
 (newline)
 (display
     (square-list-iter (list 1 2 3 4)))
@@ -63,4 +54,6 @@
 (newline)
 (display
     (square-list-iter-2 (list 1 2 3 4)))
+
+
 
