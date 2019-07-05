@@ -89,3 +89,36 @@ d) 如果采用 `cons` 取代 `list` 来构造 `mobile` 和 `branch`, 只需修�
 
 见 [square-tree.rkt](./square-tree.rkt)
 
+
+# 习题 2.31
+
+见 [tree-map.rkt](./tree-map.rkt)
+
+
+# 习题 2.32 
+
+见 [subsets.rkt](./subsets.rkt) 这题太仙了：
+
+可以观察一下下面这些
+
+``` scheme
+(display
+    (subsets (list 1 2 3)))
+(newline)
+
+(display
+    (subsets (list 2 3)))
+(newline)
+
+(display
+    (subsets (list 3)))
+(newline)
+
+(newline)
+
+(display
+    (cons 1 (list 2 3)))
+(newline)
+```
+
+就不难写出 [subsets.rkt](./subsets.rkt) 里的 `lambda` 了。
