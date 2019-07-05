@@ -70,6 +70,10 @@
 
 见 [fringe.rkt](./fringe.rkt)
 
+# 习题 2.29
+
+见 [mobile.rkt](./mobile.rkt)
+
 ---
 
 d) 如果采用 `cons` 取代 `list` 来构造 `mobile` 和 `branch`, 只需修改 `right-branch` 即可:
