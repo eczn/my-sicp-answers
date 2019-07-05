@@ -85,4 +85,7 @@ d) 如果采用 `cons` 取代 `list` 来构造 `mobile` 和 `branch`, 只需修�
     (cdr mobile))
 ```
 
+# 习题 2.30
+
+见 [square-tree.rkt](./square-tree.rkt)
 
