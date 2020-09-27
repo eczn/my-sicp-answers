@@ -117,7 +117,7 @@ d) 如果采用 `cons` 取代 `list` 来构造 `mobile` 和 `branch`, 只需修�
 (newline)
 
 (display
-    (cons 1 (list 2 3)))
+    (cons 1 (list 2 3))) ;; it equals to (list 1 2 3)
 (newline)
 ```
 

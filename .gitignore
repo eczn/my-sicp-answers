@@ -3,3 +3,4 @@ Book-Example/
 node_modules/
 Example/
 Scheme/
+.DS_Store

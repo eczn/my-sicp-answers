@@ -18,7 +18,6 @@
         (+ y z) ;; 这说明 x 是最小的，y z 是较大的两个
         (+ x (the-bigger-of y z)))) ;; 不然的话，x 是较大的两个中的一个 
 
-            
 ;; test
 (sum-of-bigger 1 2 3) ;; 5
 (sum-of-bigger 2 2 3) ;; 5

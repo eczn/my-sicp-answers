@@ -78,29 +78,34 @@
         (display b))
     (display ")") )
 
-(define test (par2 "R1" "R2"))
+(define test (add (sub "R1" "R2") "R1"))
 
 (print-exp test)
 
-(define (reduce exp)
+;; 算式复杂度计算： 每个变量只能出现一次，每多出现一次，复杂度 + 1
+;; 利用树形递归得到全部可能的化简形式，然后计算每一个化简形式的复杂度
+;; 最后找出复杂度最小的那个 
+;; 使用复杂度最小的算式进行区间计算
 
-    (if (string? exp)
-        exp
-        (let (
-            (op (car exp))
-            (a (car (cdr exp)))
-            (b (cdr (cdr exp)))
-        ) (cond ((= op "=") consequent1)
-            (predicate2 consequent2))))
+; (define (reduce exp)
 
-    ; (define op (car exp))
-    ; (define a (car (cdr exp)))
-    ; (define b (cdr (cdr exp)))
+;     (if (string? exp)
+;         exp
+;         (let (
+;             (op (car exp))
+;             (a (car (cdr exp)))
+;             (b (cdr (cdr exp)))
+;         ) (cond ((= op "=") consequent1)
+;             (predicate2 consequent2))))
+
+;     ; (define op (car exp))
+;     ; (define a (car (cdr exp)))
+;     ; (define b (cdr (cdr exp)))
     
 
 
-    )
+;     )
 
-(newline)
+; (newline)
 
 
