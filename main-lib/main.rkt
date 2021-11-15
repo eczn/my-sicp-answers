@@ -1,5 +1,7 @@
 #lang sicp
 
+;; 本目录下放了一些工具方法
+
 ;; 千万别忘了这一句
 (#%provide (all-defined))
 
@@ -44,3 +46,8 @@
           ((and !a !b) #f)
           (else #t)
             ))
+
+;; 原生 display 不会帮你加 \n 这里补一个带 \n 的 displayln
+(define (displayln str)
+    (display str)
+    (display "\n"))
