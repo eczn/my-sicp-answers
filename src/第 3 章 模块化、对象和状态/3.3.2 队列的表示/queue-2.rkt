@@ -1,7 +1,7 @@
 #lang sicp
 (#%require "../../../main-lib/main.rkt")
 
-(define (make-queue)
+(define (make-queue-2)
   (define front-ptr '() )
   (define rear-ptr '() )
 
@@ -55,7 +55,7 @@
   dispatch
 )
 
-(define q1 (make-queue))
+(define q1 (make-queue-2))
 
 (displayln
   ((q1 'empty-queue?)) )
